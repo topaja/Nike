@@ -1,0 +1,44 @@
+/* Default styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* Your logo styles */
+}
+
+.menu-icon {
+  display: none; /* Hide the icon by default */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+button {
+  /* Your button styles */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show the icon on smaller screens */
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none; /* Hide the nav links by default on smaller screens */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show the nav links when active (icon is clicked) */
+    flex-direction: column; /* Stack list items vertically */
+  }
+}
